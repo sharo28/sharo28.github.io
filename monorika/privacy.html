@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monorika プライバシーポリシー</title>
+  <style>
+    :root {
+      --bg: #0d0f12;
+      --card-bg: #16191f;
+      --border: #272c36;
+      --text: #f8fafc;
+      --text-sub: #94a3b8;
+      --accent: #38bdf8;
+      --accent-dim: rgba(56, 189, 248, 0.15);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --card-bg: #ffffff;
+        --border: #e2e8f0;
+        --text: #0f172a;
+        --text-sub: #64748b;
+        --accent: #0284c7;
+        --accent-dim: rgba(2, 132, 199, 0.1);
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 36px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+    }
+    .app-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background-color: var(--accent-dim);
+      color: var(--accent);
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .update-date {
+      font-size: 13px;
+      color: var(--text-sub);
+    }
+    section {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 12px;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+    }
+    p {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    ul {
+      margin: 12px 0 12px 24px;
+      font-size: 15px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-box {
+      background-color: var(--accent-dim);
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-sub);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="app-badge">Monorika</span>
+      <h1>プライバシーポリシー (Privacy Policy)</h1>
+      <p class="update-date">最終更新日：2026年10月11日（制定日：2026年10月11日）</p>
+    </header>
+
+    <section>
+      <h2>1. はじめに</h2>
+      <p>
+        開発者（以下、「当方」といいます）は、iOS向けアプリケーション「<strong>Monorika</strong>（モノリカ）」（以下、「本アプリ」といいます）におけるユーザーのプライバシー情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます）を定めます。
+      </p>
+    </section>
+
+    <section>
+      <h2>2. 端末内データ（完全ローカル保存・オフライン設計）について</h2>
+      <p>
+        本アプリはユーザーのプライバシーを最優先に考え、完全ローカルファーストで設計されています。
+      </p>
+      <p>
+        本アプリ内で登録・管理されるすべての収納データ（収納箱・引き出し・アイテムの名称、メモ、カテゴリ、QRコードとの紐付け情報、登録日時など）および撮影・選択された写真は、<strong>すべてユーザーの端末内（ローカルストレージおよび内部データベース）にのみ保存</strong>されます。
+      </p>
+      <p>
+        これらのデータが当方または第三者の外部サーバーへ送信・収集・蓄積されることは一切ありません。
+      </p>
+    </section>
+
+    <section>
+      <h2>3. デバイス機能（カメラ・写真）へのアクセス権限について</h2>
+      <p>
+        本アプリでは、スマートな収納管理機能を提供するために以下の端末権限を利用します。
+      </p>
+      <ul>
+        <li><strong>カメラ（Camera）</strong>:
+          <ul>
+            <li><strong>利用目的</strong>: 収納箱やアイテムに貼付されたQRコードのスキャン、および収納場所やアイテムの写真撮影に使用します。</li>
+            <li><strong>取り扱い</strong>: QRコードの認識・解析処理は端末内（オンデバイス）でリアルタイムに実行され、カメラの映像ストリームが外部サーバーへ送信・記録されることは一切ありません。</li>
+          </ul>
+        </li>
+        <li><strong>写真・フォトライブラリ（Photo Library）</strong>:
+          <ul>
+            <li><strong>利用目的</strong>: ユーザーが端末内のアルバムからアイテムや収納場所の写真を選択・登録するために使用します。</li>
+            <li><strong>取り扱い</strong>: ユーザーが明示的に選択した写真のみが本アプリの専用ローカル領域に保存されます。選択されていない写真へのアクセスや、写真データが外部へ送信されることはありません。</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 外部SDK・トラッキング・広告配信について</h2>
+      <p>
+        本アプリでは、ユーザーの行動履歴やプライバシー情報を尊重し、以下のポリシーを徹底しています。
+      </p>
+      <ul>
+        <li><strong>広告配信SDKの不使用</strong>: 本アプリにはサードパーティ製の広告配信SDK（Google AdMobなど）は一切組み込まれておりません。</li>
+        <li><strong>トラッキング・行動解析の不実施</strong>: ユーザーを追跡（トラッキング）する解析ツールや広告識別子（IDFA）の収集は行っておりません。そのため、Appleの「App Tracking Transparency（ATT）」によるトラッキング許可要求も行いません。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. QRラベル作成およびPDF印刷機能について</h2>
+      <p>
+        本アプリ内で提供される「QRラベル印刷機能（市販シール紙向けPDF出力・AirPrint印刷プレビュー）」は、端末内で直接PDFドキュメントを生成・描画します。
+      </p>
+      <p>
+        印刷用データや生成されたQRコード情報が外部サーバーを介して処理されることは一切ありません。
+      </p>
+    </section>
+
+    <section>
+      <h2>6. お問い合わせ時にご提供いただく情報</h2>
+      <p>
+        ユーザーがサポート窓口等をご利用される場合、以下の情報をご提供いただくことがあります。
+      </p>
+      <ul>
+        <li><strong>収集される情報</strong>: お問い合わせフォームにて任意でご入力いただいたメールアドレス、お問い合わせ内容（不具合報告・ご要望等）。</li>
+        <li><strong>利用目的</strong>: お問い合わせに対する事実関係の確認・調査・回答、およびアプリの品質改善のため。</li>
+        <li>※ご入力いただいたメールアドレス等をお問い合わせへの返答以外の目的に利用することはありません。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. 個人情報の第三者提供について</h2>
+      <p>
+        当方は、法令に基づく場合を除き、ユーザー本人の同意なく個人情報を第三者に提供することはありません。
+      </p>
+    </section>
+
+    <section>
+      <h2>8. 免責事項</h2>
+      <p>
+        本アプリの機能・動作につきましては細心の注意を払って開発を行っておりますが、その正確性・完全性・有用性および特定目的への適合性について保証するものではありません。
+      </p>
+      <p>
+        端末の故障、OSアップデート、アプリの削除等に伴う登録データや写真の消失、その他本アプリの利用または利用不能により生じた損害等につきまして、当方は一切の責任を負いかねますのであらかじめご了承ください（大切なデータにつきましては、iOS標準の端末バックアップ機能等のご利用を推奨いたします）。
+      </p>
+    </section>
+
+    <section>
+      <h2>9. プライバシーポリシーの変更</h2>
+      <p>
+        当方は、法令の改正やアプリの機能追加・改修に伴い、本ポリシーを改定することがあります。重要な変更がある場合は、本ページにて告知いたします。
+      </p>
+    </section>
+
+    <section>
+      <h2>10. お問い合わせ・サポート窓口</h2>
+      <p>
+        本ポリシーや本アプリに関するご質問・ご要望・サポートに関するお問い合わせは、以下の窓口よりお願いいたします。
+      </p>
+      <div class="contact-box">
+        <p><strong>開発者</strong>: sharo28</p>
+        <p><strong>お問い合わせ</strong>: <a href="https://forms.gle/jJn4UG4xcrD23gWC7" target="_blank" rel="noopener noreferrer">お問い合わせフォームを開く (Google フォーム)</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 sharo28. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
