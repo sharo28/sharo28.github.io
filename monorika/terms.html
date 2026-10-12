@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monorika 利用規約</title>
+  <style>
+    :root {
+      --bg: #0d0f12;
+      --card-bg: #16191f;
+      --border: #272c36;
+      --text: #f8fafc;
+      --text-sub: #94a3b8;
+      --accent: #38bdf8;
+      --accent-dim: rgba(56, 189, 248, 0.15);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --card-bg: #ffffff;
+        --border: #e2e8f0;
+        --text: #0f172a;
+        --text-sub: #64748b;
+        --accent: #0284c7;
+        --accent-dim: rgba(2, 132, 199, 0.1);
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 36px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .app-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background-color: var(--accent-dim);
+      color: var(--accent);
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .header-links a {
+      font-size: 13px;
+      color: var(--text-sub);
+      text-decoration: none;
+      margin-left: 12px;
+    }
+    .header-links a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .update-date {
+      font-size: 13px;
+      color: var(--text-sub);
+    }
+    section {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 12px;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+    }
+    p {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    ul, ol {
+      margin: 12px 0 12px 24px;
+      font-size: 15px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-box {
+      background-color: var(--accent-dim);
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+    .notice-box {
+      background-color: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: inherit;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-sub);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <span class="app-badge">Monorika</span>
+        <div class="header-links">
+          <a href="./privacy.html">プライバシーポリシー</a>
+          <a href="../index.html">ホーム</a>
+        </div>
+      </div>
+      <h1>利用規約 (Terms of Service)</h1>
+      <p class="update-date">制定日：2026年10月12日</p>
+    </header>
+
+    <section>
+      <h2>第1条（適用および同意）</h2>
+      <p>
+        本利用規約（以下、「本規約」といいます）は、開発者（以下、「当方」といいます）が提供するiOS向けアプリケーション「<strong>Monorika</strong>（モノリカ）」（以下、「本アプリ」といいます）の利用条件を定めるものです。
+      </p>
+      <p>
+        ユーザーは、本アプリをダウンロード、インストール、または利用することにより、本規約のすべての条項に同意したものとみなされます。本規約に同意いただけない場合、本アプリをご利用いただくことはできません。
+      </p>
+    </section>
+
+    <section>
+      <h2>第2条（サービス概要およびローカルデータ管理）</h2>
+      <p>
+        本アプリは、QRコードおよび端末のカメラ等を用いて家庭内の収納箱、引き出し、書類、および物品の保管場所を可視化・整理整頓するためのユーティリティツールです。
+      </p>
+      <p>
+        本アプリはユーザーのプライバシー保護を最優先とし、<strong>完全ローカル設計（完全オフライン動作）</strong>を採用しております。ユーザーが登録したすべてのデータ（収納場所、アイテム情報、メモ、写真、階層構造など）は、<strong>ユーザーの端末内（ローカルストレージおよび内部データベース）にのみ保存</strong>され、当方の管理する外部サーバーへ自動的に送信・保管されることはありません。
+      </p>
+    </section>
+
+    <section>
+      <h2>第3条（データの自己管理およびバックアップの義務）</h2>
+      <p>
+        前条のとおり、本アプリは外部サーバーへの自動同期やクラウドバックアップを行わないローカルファーストの設計となっています。そのため、以下の点についてユーザーご自身の責任において管理していただく必要があります。
+      </p>
+      <ul>
+        <li>
+          <strong>バックアップの義務</strong>: ユーザーは、端末の紛失、盗難、水没、破損、故障、iOSのアップデート、端末の初期化・機種変更、および本アプリの誤削除（アンインストール）に備え、自己の責任において、本アプリ内の「バックアップ＆復元」機能（JSON/エクスポートデータ等）やiOS標準の端末バックアップ機能を用いて、定期的にデータのバックアップを行うものとします。
+        </li>
+        <li>
+          <strong>データ復元の免責</strong>: ユーザーがバックアップを行っていなかったこと、バックアップデータの破損・不整合、または端末の初期化等によってデータが消失・破損した場合について、当方はデータの復元およびこれに伴う一切の損害について責任を負いません。
+        </li>
+      </ul>
+      <div class="notice-box">
+        ⚠️ <strong>重要</strong>: 本アプリを端末から削除（アンインストール）すると、アプリ内の登録データおよび写真も同時に端末内から消去されます。アプリ削除前には必ず「設定」＞「バックアップ＆復元」よりバックアップファイルを出力・保存してください。
+      </div>
+    </section>
+
+    <section>
+      <h2>第4条（QRコードおよび印刷機能の利用に関する免責）</h2>
+      <p>
+        本アプリでは、収納箱や物品の識別を補助するためにQRコードのスキャン機能およびラベル印刷用PDF生成機能を提供しています。
+      </p>
+      <ol>
+        <li>
+          本アプリのQRコード読み取りおよび識別処理は、端末カメラの性能、周囲の照明環境、印刷されたシールの状態（インクのかすれ、汚れ、水濡れ、曲面貼付、経年劣化・剥がれ）等に依存します。
+        </li>
+        <li>
+          当方は、いかなる環境においてもQRコードが常に正常に読み取れること、または誤認識が発生しないことを保証いたしません。
+        </li>
+        <li>
+          QRコードの読み取り不良、シールの剥がれ・破損、または誤認識によって生じた物品の紛失、取り違え、誤廃棄、その他一切の損害について、当方は責任を負いません。
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>第5条（有料チケットおよび課金）</h2>
+      <p>
+        本アプリでは、登録可能な収納場所およびアイテム数（ノード数）を拡張するための買い切り型チケット（以下、「追加チケット」といいます）をアプリ内課金（In-App Purchase）にて提供しています。
+      </p>
+      <ul>
+        <li>
+          <strong>決済方法</strong>: 追加チケットの購入代金決済は、Apple Inc.（App Store）の決済システムを通じて処理されます。
+        </li>
+        <li>
+          <strong>返金・キャンセル</strong>: 法令に別段の定めがある場合を除き、購入完了後の追加チケットのキャンセル、払い戻し、および換金には応じかねます。返金に関するお問い合わせは、Apple Inc.のサポート窓口およびApp Storeの規約に従って行われるものとします。
+        </li>
+        <li>
+          <strong>購入の復元</strong>: 機種変更や端末初期化の際は、本アプリ内の「購入の復元（Restore Purchases）」機能により、同一のApple IDで購入したチケット情報を再適用することができます。
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>第6条（禁止事項）</h2>
+      <p>ユーザーは、本アプリの利用にあたり、以下の行為を行ってはならないものとします。</p>
+      <ul>
+        <li>法令、裁判所の判決・決定・命令、または公序良俗に反する行為</li>
+        <li>本アプリのリバースエンジニアリング、逆コンパイル、逆アセンブル、またはソースコードの抽出・改変行為</li>
+        <li>本アプリのセキュリティ機能や認証メカニズム、課金制御を回避または無効化する行為</li>
+        <li>当方または第三者の著作権、商標権、特許権等の知的財産権を侵害する行為</li>
+        <li>その他、当方が不適切と合理的に判断する行為</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>第7条（免責事項および損害賠償額の上限）</h2>
+      <p>
+        1. 当方は、本アプリの提供にあたり細心の注意を払っておりますが、本アプリに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害を含みます）がないことを明示的にも黙示的にも保証いたしません。
+      </p>
+      <p>
+        2. 当方は、本アプリに起因してユーザーに生じたあらゆる損害（データの消失・破損・利用不能、端末の故障、業務の中断、精神的苦痛、その他の直接的・間接的・派生的損害を含みます）について、<strong>当方の故意または重過失による場合を除き、一切の責任を負いません</strong>。
+      </p>
+      <p>
+        3. 何らかの理由（消費者契約法その他の強行法規の適用を含みます）により当方がユーザーに対して損害賠償責任を負う場合であっても、当方の賠償責任は、ユーザーに現実に生じた直接かつ通常の損害に限られるものとし、その賠償額の上限は、<strong>「当該損害の原因となった事由が生じた日までに、ユーザーが本アプリに関して当方に実際に支払った対価の総額」または「金1,000円」のいずれか高い額</strong>とします。
+      </p>
+    </section>
+
+    <section>
+      <h2>第8条（知的財産権および商標）</h2>
+      <p>
+        本アプリを構成するプログラム、画面デザイン、UIアイコン、テキスト、レイアウト等の著作権を含む一切の知的財産権は、当方または正当な権利者に帰属します。
+      </p>
+      <p>
+        ※ 「QRコード」は株式会社デンソーウェーブの登録商標です。
+      </p>
+    </section>
+
+    <section>
+      <h2>第9条（規約の変更およびサービスの変更・終了）</h2>
+      <p>
+        当方は、必要に応じて本規約を変更し、または本アプリの機能の変更・修正・提供終了を行うことができるものとします。
+      </p>
+      <p>
+        本規約を変更した場合、当方のWebサイトまたはアプリ内にて速やかに告知するものとし、変更後にユーザーが本アプリを利用したことをもって、変更後の規約に同意したものとみなされます。
+      </p>
+    </section>
+
+    <section>
+      <h2>第10条（準拠法および管轄裁判所）</h2>
+      <p>
+        本規約の解釈および適用にあたっては、日本法を準拠法とします。
+      </p>
+      <p>
+        本アプリまたは本規約に関してユーザーと当方との間で紛争が生じた場合には、東京地方裁判所を第一審の専属的合意管轄裁判所とします。
+      </p>
+    </section>
+
+    <section>
+      <h2>第11条（お問い合わせ窓口）</h2>
+      <p>
+        本規約に関するご質問やお問い合わせは、以下のサポート窓口よりご連絡ください。
+      </p>
+      <div class="contact-box">
+        <p><strong>開発者</strong>: sharo28</p>
+        <p><strong>お問い合わせ</strong>: <a href="https://forms.gle/jJn4UG4xcrD23gWC7" target="_blank" rel="noopener noreferrer">お問い合わせフォームを開く (Google フォーム)</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 sharo28. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
