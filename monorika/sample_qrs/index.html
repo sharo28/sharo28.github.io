@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monorika - App Store Review Test QR Codes</title>
+  <style>
+    :root {
+      --primary: #007AFF;
+      --primary-dark: #0056B3;
+      --bg: #F2F2F7;
+      --card-bg: #FFFFFF;
+      --text: #1C1C1E;
+      --text-sub: #636366;
+      --border: #E5E5EA;
+      --success: #34C759;
+      --warning: #FF9500;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      margin: 0;
+      padding: 30px 20px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    .header {
+      background: var(--card-bg);
+      padding: 32px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      margin-bottom: 28px;
+    }
+    .badge-review {
+      display: inline-block;
+      background: #E1F0FF;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 12px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .desc {
+      color: var(--text-sub);
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+    .instruction-steps {
+      background: #F9FAFB;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 20px;
+      margin-top: 16px;
+    }
+    .instruction-steps ol {
+      margin: 8px 0 0 0;
+      padding-left: 20px;
+      font-size: 14px;
+      color: #374151;
+    }
+    .instruction-steps li {
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 36px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-desc {
+      font-size: 14px;
+      color: var(--text-sub);
+      margin: -10px 0 16px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .card-qr-img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 12px;
+      border: 1px solid #ECECEE;
+      background: #FFF;
+      padding: 8px;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 14px 0 4px;
+      letter-spacing: -0.3px;
+    }
+    .card-subtitle {
+      font-size: 12px;
+      color: var(--text-sub);
+      margin-bottom: 12px;
+    }
+    .expected-box {
+      width: 100%;
+      background: #F8F9FA;
+      border-left: 3px solid var(--primary);
+      border-radius: 6px;
+      padding: 10px 12px;
+      text-align: left;
+      font-size: 12px;
+      color: #374151;
+      margin-top: auto;
+    }
+    .expected-box strong {
+      display: block;
+      color: #111827;
+      margin-bottom: 2px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-type {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+    .type-box {
+      background: #E8F4FD;
+      color: #007AFF;
+    }
+    .type-item {
+      background: #FEF3C7;
+      color: #D97706;
+    }
+    .type-new {
+      background: #E6F8EE;
+      color: #15803D;
+    }
+    .print-tip {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--text-sub);
+    }
+    @media print {
+      body {
+        background: #FFF;
+        padding: 0;
+      }
+      .card {
+        box-shadow: none;
+        page-break-inside: avoid;
+        border: 1px solid #CCC;
+      }
+      .header {
+        box-shadow: none;
+        border: 1px solid #CCC;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="badge-review">Apple App Review Test Sheet</span>
+      <h1>Monorika - Sample Test QR Codes</h1>
+      <p class="desc">
+        Monorika is a local-first storage management application that lets users inspect physical storage box contents and identify items through camera QR scanning without opening boxes.
+      </p>
+
+      <div class="instruction-steps">
+        <strong>How to Test with Your iOS Device:</strong>
+        <ol>
+          <li>Launch <strong>Monorika</strong> on your test iPhone. The app starts directly in the <strong>QR Scanner (QRスキャン)</strong> view.</li>
+          <li>Point your iPhone camera at one of the three QR codes below.</li>
+          <li>Scan <strong>Storage Box #01</strong> to see its three seeded items, or scan <strong>Individual Item #01</strong> to see its home location.</li>
+          <li>Scan <strong>Unregistered QR</strong> to open the new-code registration sheet and start registering an item or a storage box.</li>
+          <li>From <strong>Settings (設定)</strong>, you can also preview A4 QR labels and test backup/restore.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section-title">📦 1. Storage Box Quick Check</div>
+    <div class="section-desc">Scan the code to inspect the box contents without opening the physical container.</div>
+    <div class="grid">
+      <div class="card">
+        <span class="badge-type type-box">STORAGE BOX #01</span>
+        <img class="card-qr-img" src="review_box_winter_tops.png" alt="Storage Box 01 QR code">
+        <div class="card-title">Winter Tops (クローゼット中段)</div>
+        <div class="card-subtitle">Bedroom closet / 3 seeded clothing items</div>
+        <div class="expected-box">
+          <strong>Expected Result:</strong>
+          The bottom sheet shows three stored items: a cashmere turtleneck, a mohair sweater, and a wool cardigan.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">🏷️ 2. Identify an Item and Find Its Home</div>
+    <div class="section-desc">Scan an individual item's QR code to see where it belongs.</div>
+    <div class="grid">
+      <div class="card">
+        <span class="badge-type type-item">INDIVIDUAL ITEM #01</span>
+        <img class="card-qr-img" src="review_item_book.png" alt="Individual Item 01 QR code">
+        <div class="card-title">Software Design Handbook (実践ソフトウェア設計ハンドブック)</div>
+        <div class="card-subtitle">Stored in the Important Binder (書類・重要バインダー)</div>
+        <div class="expected-box">
+          <strong>Expected Result:</strong>
+          The item sheet shows the book's designated storage location. The reviewer can try the take-out and return actions.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">⚡ 3. Register a New QR Sticker</div>
+    <div class="section-desc">Scan an unused code to try the first-time registration flow.</div>
+    <div class="grid">
+      <div class="card" style="max-width: 440px; margin: 0 auto;">
+        <span class="badge-type type-new">UNREGISTERED QR</span>
+        <img class="card-qr-img" src="review_unregistered.png" alt="Unregistered QR code">
+        <div class="card-title">New Sticker (未登録QR)</div>
+        <div class="card-subtitle">This code is not present in the seeded demo data.</div>
+        <div class="expected-box">
+          <strong>Expected Result:</strong>
+          The app opens the "新しいQRコードを検知" sheet. The reviewer can start registering the code as an item or a storage box.
+        </div>
+      </div>
+    </div>
+
+    <div class="print-tip">
+      💡 Tip: This page is optimized for both desktop screen scanning and A4 printout (Cmd/Ctrl + P).
+    </div>
+  </div>
+</body>
+</html>
